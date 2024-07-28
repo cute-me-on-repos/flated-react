@@ -1,5 +1,5 @@
 import { render } from "@testing-library/react";
-import FlatedReact from "../src"; // Adjust the import based on your project structure
+import FlatedReact from "../dist/cjs"; // Adjust the import based on your project structure
 
 // Mock components for testing
 const MockComponentA: React.FC<
@@ -76,6 +76,7 @@ describe("FlatedReact", () => {
           [MockComponentC, undefined],
           [MockComponentC, null],
           [MockComponentC, {}],
+          MockComponentC,
         ]}
       >
         <span>No Props Children</span>

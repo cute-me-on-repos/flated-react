@@ -5,5 +5,5 @@
     "jsx": "react-jsx",
     "noEmit": true
   },
-  "include": ["tests", "**/*.test.tsx", "**/*.test.ts", "**/*.stories.ts"]
+  "include": ["tests","dist", "**/*.test.tsx", "**/*.test.ts", "**/*.stories.ts"]
 }

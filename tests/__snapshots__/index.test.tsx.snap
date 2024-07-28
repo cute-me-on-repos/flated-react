@@ -53,9 +53,13 @@ exports[`FlatedReact renders without props and \`FlatedReact.Load\` correctly 1`
           <div>
             C: 
             7
-            <span>
-              No Props Children
-            </span>
+            <div>
+              C: 
+              8
+              <span>
+                No Props Children
+              </span>
+            </div>
           </div>
         </div>
       </div>
