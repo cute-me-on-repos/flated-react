@@ -1,6 +1,6 @@
 {
   "name": "@cute-me-on-repos/flated-react",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "`flated-react` is a react typescript libary that is used to Flatten nested React components and remove React context hells",
   "main": "./dist/esm/index.js",
   "module": "./dist/esm/index.js",
