@@ -32,9 +32,9 @@ jobs:
 
       - run: pnpm install
 
-      - run: pnpm test
-
       - run: pnpm build
+      
+      - run: pnpm test
 
       - run: pnpm publish --access public --no-git-checks
         env:
