@@ -9,7 +9,6 @@ on:
 
 jobs:
   publish-npm:
-    needs: build
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -29,7 +28,14 @@ jobs:
           registry-url: https://registry.npmjs.org/
 
       - run: pnpm install
+      
+      - run: pnpm test
+
       - run: pnpm build
+
+      - name: Authenticate with private NPM package
+        run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.pnpmrc
+
       - run: pnpm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
