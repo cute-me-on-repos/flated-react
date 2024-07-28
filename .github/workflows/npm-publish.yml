@@ -28,14 +28,11 @@ jobs:
           registry-url: https://registry.npmjs.org/
 
       - run: pnpm install
-      
+
       - run: pnpm test
 
       - run: pnpm build
 
-      - name: Authenticate with private NPM package
-        run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.pnpmrc
-
-      - run: pnpm publish
+      - run: pnpm publish --no-git-checks
         env:
-          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
