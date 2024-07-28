@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FlatedReact renders components with default props 1`] = `
+<div>
+  <div>
+    A: 
+    Default Message
+    <div>
+      C: 
+      2
+      <span>
+        Default Children
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`FlatedReact renders nested components correctly 1`] = `
+<div>
+  <div>
+    A: 
+    Hello
+    <div>
+      B: 
+      42
+      <div>
+        C: 
+        1
+        <span>
+          Children Content
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`FlatedReact renders without props and \`FlatedReact.Load\` correctly 1`] = `
+<div>
+  <div>
+    C: 
+    3
+    <div>
+      C: 
+      4
+      <div>
+        C: 
+        5
+        <div>
+          C: 
+          6
+          <div>
+            C: 
+            7
+            <span>
+              No Props Children
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

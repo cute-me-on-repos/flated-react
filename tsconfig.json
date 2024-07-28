@@ -1,0 +1,16 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "types": ["jest"],
+    "jsx": "react-jsx",
+    "noEmit": true
+  },
+  "include": [
+    "src",
+    "tests",
+    "**/*.test.tsx",
+    "**/*.test.ts",
+    "**/*.stories.ts",
+    "./*.js"
+, "babel.config.cjs"  ]
+}

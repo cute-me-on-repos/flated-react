@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "types": ["jest"],
+    "jsx": "react-jsx",
+    "noEmit": true
+  },
+  "include": ["tests", "**/*.test.tsx", "**/*.test.ts", "**/*.stories.ts"]
+}

@@ -1,10 +1,23 @@
 {
   "name": "@cute-me-on-repo/flated-react",
   "version": "1.0.0",
-  "description": "`flated-react` is a react libary that used to Flatten nested React components and remove React context hells",
-  "main": "dist/index.js",
+  "description": "`flated-react` is a react typescript libary that is used to Flatten nested React components and remove React context hells",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/esm/index.d.ts",
+  "type": "module",
+  "exports": {
+    "*": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.cjs"
+    }
+  },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "prebuild": "rm -rf dist",
+    "build": "pnpm run build:esm & pnpm run build:cjs & wait && echo '🎉 Parallelly built success'",
+    "build:esm": "tsc --incremental -p tsconfig.build.json",
+    "build:cjs": "tsc --incremental -p tsconfig.build.json --module commonjs --outDir dist/cjs"
   },
   "repository": {
     "type": "git",
@@ -24,5 +37,19 @@
   "bugs": {
     "url": "https://github.com/cute-me-on-repos/flated-react/issues"
   },
-  "homepage": "https://thediligentengineer.com/flated-react"
+  "homepage": "https://thediligentengineer.com/the-flated-reaction",
+  "devDependencies": {
+    "@jest/globals": "^29.7.0",
+    "@testing-library/react": "^16.0.0",
+    "@types/jest": "^29.5.12",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-test-renderer": "^18.3.1",
+    "ts-jest": "^29.2.3",
+    "typescript": "^5.5.4"
+  }
 }
