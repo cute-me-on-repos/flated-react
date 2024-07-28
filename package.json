@@ -2,29 +2,16 @@
   "name": "@cute-me-on-repos/flated-react",
   "version": "1.0.2",
   "description": "`flated-react` is a react typescript libary that is used to Flatten nested React components and remove React context hells",
-  "main": "./dist/cjs/index.js",
+  "main": "./dist/esm/index.js",
   "module": "./dist/esm/index.js",
+  "require": "./dist/cjs/index.js",
   "types": "./dist/esm/index.d.ts",
   "type": "module",
-  "exports": {
-    "*": {
-      "import": "./dist/esm/index.js",
-      "require": "./dist/cjs/index.cjs",
-      "types": "./dist/esm/index.d.ts"
-    }
-  },
   "files": [
     "dist",
     "LICENSE",
     "README.MD"
   ],
-  "scripts": {
-    "test": "jest",
-    "prebuild": "rm -rf dist",
-    "build": "pnpm run build:esm & pnpm run build:cjs & wait && echo '🎉 Parallelly built success'",
-    "build:esm": "tsc --incremental -p tsconfig.build.json",
-    "build:cjs": "tsc --incremental -p tsconfig.build.json --module commonjs --outDir dist/cjs"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cute-me-on-repos/flated-react.git"
@@ -57,5 +44,12 @@
     "react-test-renderer": "^18.3.1",
     "ts-jest": "^29.2.3",
     "typescript": "^5.5.4"
+  },
+  "scripts": {
+    "test": "jest",
+    "prebuild": "rm -rf dist",
+    "build": "pnpm run build:esm & pnpm run build:cjs & wait && echo '🎉 Parallelly built success'",
+    "build:esm": "tsc --incremental -p tsconfig.build.json",
+    "build:cjs": "tsc --incremental -p tsconfig.build.json --module commonjs --outDir dist/cjs"
   }
 }
