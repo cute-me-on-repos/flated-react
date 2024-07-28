@@ -1,0 +1,28 @@
+{
+  "name": "@cute-me-on-repo/flated-react",
+  "version": "1.0.0",
+  "description": "`flated-react` is a react libary that used to Flatten nested React components and remove React context hells",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cute-me-on-repos/flated-react.git"
+  },
+  "keywords": [
+    "reactjs",
+    "react",
+    "context",
+    "hell",
+    "callback",
+    "hell",
+    "lib"
+  ],
+  "author": "Kairis - Lý Lưỡng Thiên 🇻🇳",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cute-me-on-repos/flated-react/issues"
+  },
+  "homepage": "https://thediligentengineer.com/flated-react"
+}
