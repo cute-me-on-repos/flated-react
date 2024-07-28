@@ -1,0 +1,30 @@
+name: Run Tests
+
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+        - main
+    tags:
+        - v*
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18.17.1'
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Run Jest tests
+        run: pnpm test
