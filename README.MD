@@ -5,7 +5,7 @@
 
 [![All Testing](https://github.com/cute-me-on-repos/flated-react/actions/workflows/run-test.yml/badge.svg 'All Testing')](https://github.com/cute-me-on-repos/flated-react/actions?query=workflow:%22Run+Tests%22)
 <br/>
-[![NPM Publication](https://github.com/cute-me-on-repos/flated-react/actions/workflows/npm-publish.yml/badge.svg 'NPM Publication')](https://npmjs.com/package/@cute-me-on-repo/flated-react)
+[![NPM Publication](https://github.com/cute-me-on-repos/flated-react/actions/workflows/npm-publish.yml/badge.svg 'NPM Publication')](https://npmjs.com/package/@cute-me-on-repos/flated-react)
 
 
 ## Install
