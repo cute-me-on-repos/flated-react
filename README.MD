@@ -1,5 +1,13 @@
 # FLATED REACT
 `flated-react` is a react libary that used to Flatten nested React components and remove React context hells
+## Build Status
+
+
+[![All Testing](https://github.com/cute-me-on-repos/flated-react/actions/workflows/run-test.yml/badge.svg 'All Testing')](https://github.com/cute-me-on-repos/flated-react/actions?query=workflow:%22Run+Tests%22)
+<br/>
+[![NPM Publication](https://github.com/cute-me-on-repos/flated-react/actions/workflows/npm-publish.yml/badge.svg 'NPM Publication')](https://npmjs.com/package/@cute-me-on-repo/flated-react)
+
+
 ## Install
 
 ```bash
